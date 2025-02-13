@@ -473,7 +473,7 @@ address {
   background: #404bbf;
 }
 
-/* --- HERO FOR PADS --- */
+/* --- HERO FOR TAABLETS  --- */
 
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -1111,6 +1111,7 @@ address {
     width: 768px;
     padding: 0;
     padding-left: 108px;
+    padding-right: 108px;
     margin: 0;
   }
 

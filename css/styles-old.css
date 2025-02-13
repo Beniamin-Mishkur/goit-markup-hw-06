@@ -24,7 +24,7 @@
   margin-right: 76px;
 } */
 
- /* .header-logo .logo-part {
+/* .header-logo .logo-part {
   color: #2e2f42;
 }  */
 
@@ -32,7 +32,8 @@
   display: flex;
   align-items: center;
   gap: 40px;
-} */ */
+} */
+*/
 
 /* .nav-link {
   padding: 24px 0;
@@ -169,7 +170,7 @@
   overflow: hidden;
 } */
 
-.arguments-list {
+/* .arguments-list {
   display: flex;
   max-width: 1128px;
   margin: auto;
@@ -186,10 +187,10 @@
   height: 112px;
   background: #f4f4fd;
   margin-bottom: 8px;
-}
+} */
 /* ТОЛЬКО ДЛЯ ПК!! */
 
-
+/* 
 .arguments-list-item {
   max-width: calc((1128px - 72px) / 4);
 }
@@ -212,9 +213,9 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-}
+} */
 
-.team {
+/* .team {
   background: #f4f4fd;
 }
 
@@ -244,9 +245,11 @@
   width: calc((100% - 72px) / 3);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+} */
 
-.team-member-descr-smedia {
+/* WIDTH CALC НАДО БУДЕТ ЗАДАТЬ ДЛЯ ПЛАНШЕТА И ПК */
+
+/* .team-member-descr-smedia {
   padding: 32px 0;
   display: flex;
   flex-direction: column;
@@ -276,12 +279,6 @@
   color: #434455;
 }
 
-/* .team-member-social-media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 16px 32px;
-} */
 
 .team-member-social-media-list {
   display: flex;
@@ -307,7 +304,7 @@
 
 .team-member-social-media-list .soc-media-icon {
   fill: #f4f4fd;
-}
+} */
 
 .section-portfolio {
   padding-top: 120px;
@@ -339,19 +336,25 @@
   max-width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* WIDTH CALC НАДО БУДЕТ ЗАДАТЬ ДЛЯ ПЛАНШЕТА И ПК */
+
 .portfolio-list-item:hover .portfolio-cover-text {
   transform: translateY(0);
 }
+/* ----- ДЛЯ ПК ----- */
 
 .portfolio-list-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+/* ----- ДЛЯ ПК ----- */
 
 .portfolio-cover-wrap {
   position: relative;
   overflow: hidden;
 }
+/* ----- ДЛЯ ПК ----- */
 
 .portfolio-cover-text {
   position: absolute;
@@ -368,6 +371,8 @@
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* ----- ДЛЯ ПК ----- */
+/* НА ТЕЛЕФОНЕ УБРАЛ ЕГО ОТОБРАЖЕНИЕ */
 
 .service-descr {
   border-bottom: 1px solid #e7e9fc;
@@ -392,6 +397,7 @@
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -575,6 +581,8 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* общий стиль для бекдропа (темный фон накрывающий весь сайт) */
+
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
@@ -595,6 +603,8 @@
   background-color: #fcfcfc;
   transition: transfrom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ЗАМЕНЕНЫ ПАДДИНГИ, ШИРИНА WIDTH + Height */
 
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -50%) scale(1.5);
@@ -629,11 +639,14 @@
   fill: #fff;
 }
 
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
+
 .modal-window-btn:hover,
 .modal-window-btn:focus {
   background-color: #404bbf;
   border: none;
 }
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
 .form-title {
   font-weight: 500;
@@ -705,6 +718,8 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ЗАМЕНЕНЫ ПАДДИНГИ, ШИРИНА WIDTH */
+
 .form-field textarea {
   font-size: 12px;
   line-height: 1.17;
@@ -724,20 +739,25 @@
   border-color: #4d5ae5;
   outline: none;
 }
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
 .input-wrapper:has(input:focus) .form-icon {
   fill: #4d5ae5;
 }
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
 .form-field input:focus::placeholder {
   color: #4d5ae5;
 }
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
 .form-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
 }
+/* ЗАМЕНЕНA ШИРИНА WIDTH */
+
 
 .form-field textarea {
   padding: 8px 16px;
@@ -751,10 +771,12 @@
   border-color: #4d5ae5;
   outline: none;
 }
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
 .form-field textarea:focus::placeholder {
   color: #4d5ae5;
 }
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
 .checkbox-wrapper {
   margin-bottom: 24px;
@@ -797,6 +819,7 @@
 .form-btn:focus {
   background: #404bbf;
 }
+/* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
 .check-input:checked + .checkbox-label .custom-checkbox {
   border-radius: 2px;
@@ -829,3 +852,6 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* fill: transparent; */
 }
+
+
+@media screen and (min-width: 1158px) {}

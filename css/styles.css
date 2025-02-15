@@ -320,6 +320,7 @@ address {
 
 .mobile-menu-contacts {
   font-style: normal;
+  margin-bottom: 48px;
 }
 
 .mobile-menu-nav {
@@ -345,7 +346,6 @@ address {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .mobile-menu-contacts-link {
@@ -946,8 +946,7 @@ address {
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Центрує всі елементи по горизонталі */
-  text-align: center; /* Центрує текст */
+  text-align: center;
   width: 320px;
 }
 .page-footer {
@@ -981,6 +980,7 @@ address {
 .footer-logo-descr {
   display: flex;
   flex-direction: column;
+  margin-bottom: 72px;
 }
 
 .footer-text {
@@ -991,14 +991,12 @@ address {
   color: #f4f4fd;
   width: 264px;
   text-align: left;
-  margin-bottom: 72px;
 }
 
 .company-social-media {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-bottom: 72px;
 }
 .sm-text {
@@ -1180,7 +1178,7 @@ address {
     .footer-logo-descr {
       display: flex;
       flex-direction: column;
-      margin-right: 120px;
+      margin: 0px 120px 0px 0px;
     }
 
     .footer-text {
@@ -1197,6 +1195,7 @@ address {
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
+      margin: 0;
     }
 
     .sm-text {
@@ -1561,42 +1560,40 @@ address {
 
 @media screen and (min-width: 1158px) {
   .modal-window-btn:hover .btn-icon,
-.modal-window-btn:focus .btn-icon {
-  fill: #fff;
-}
+  .modal-window-btn:focus .btn-icon {
+    fill: #fff;
+  }
 
-.modal-window-btn:hover,
-.modal-window-btn:focus {
-  background-color: #404bbf;
-  border: none;
-}
-.form-field input:focus {
-  border-color: #4d5ae5;
-  outline: none;
-}
+  .modal-window-btn:hover,
+  .modal-window-btn:focus {
+    background-color: #404bbf;
+    border: none;
+  }
+  .form-field input:focus {
+    border-color: #4d5ae5;
+    outline: none;
+  }
 
-.input-wrapper:has(input:focus) .form-icon {
-  fill: #4d5ae5;
-}
+  .input-wrapper:has(input:focus) .form-icon {
+    fill: #4d5ae5;
+  }
 
-.form-field input:focus::placeholder {
-  color: #4d5ae5;
-}
-.form-field textarea:focus {
-  border-color: #4d5ae5;
-  outline: none;
-}
-/* ---- ТОЛЬКО ДЛЯ ПК ---- */
+  .form-field input:focus::placeholder {
+    color: #4d5ae5;
+  }
+  .form-field textarea:focus {
+    border-color: #4d5ae5;
+    outline: none;
+  }
+  /* ---- ТОЛЬКО ДЛЯ ПК ---- */
 
-.form-field textarea:focus::placeholder {
-  color: #4d5ae5;
-}
-/* ---- ТОЛЬКО ДЛЯ ПК ---- */
-.form-btn:hover,
-.form-btn:focus {
-  background: #404bbf;
-}
-/* ---- ТОЛЬКО ДЛЯ ПК ---- */
-
-
+  .form-field textarea:focus::placeholder {
+    color: #4d5ae5;
+  }
+  /* ---- ТОЛЬКО ДЛЯ ПК ---- */
+  .form-btn:hover,
+  .form-btn:focus {
+    background: #404bbf;
+  }
+  /* ---- ТОЛЬКО ДЛЯ ПК ---- */
 }
